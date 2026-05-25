@@ -25,7 +25,7 @@
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Flashforge Creator 5 Pro direto na sua porta com a GlobalBrasilShop — R$ 12.250, importação direta, lançamento mundial 2026" />
+<meta property="og:image:alt" content="Flashforge Creator 5 Pro direto na sua porta com a GlobalBrasilShop — R$ 12.970, importação direta, lançamento mundial 2026" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Flashforge Creator 5 Pro — Direto na sua porta | GlobalBrasilShop" />
 <meta name="twitter:description" content="Uma loja americana que funciona no Brasil. Preço final calculado, sem susto na alfândega." />
@@ -546,23 +546,71 @@
   #pricing > * { position: relative; z-index: 1; }
   #pricing .section-title { color: #fff; }
   #pricing .section-eyebrow { background: rgba(255,255,255,0.2); color: #fff; }
+  .pricing-grid {
+    max-width: 600px;
+    margin: 32px auto 0;
+  }
   .pricing-card {
-    max-width: 540px; margin: 0 auto;
     background: #fff; color: var(--accent);
     border-radius: 20px;
-    padding: 40px;
+    padding: 32px 28px;
     box-shadow: 0 30px 60px rgba(0,0,0,0.25);
     text-align: center;
+    display: flex; flex-direction: column;
+    position: relative;
   }
-  .pricing-card .pre-price { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
-  .pricing-card .strike-big { color: var(--muted); text-decoration: line-through; font-size: 18px; }
+  .pricing-card.reserve-card {
+    background: linear-gradient(160deg, #fffbeb 0%, #fff 60%);
+    border: 2px solid #fbbf24;
+  }
+  .card-badge {
+    position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+    background: #fbbf24; color: #78350f;
+    padding: 6px 18px; border-radius: 999px;
+    font-weight: 800; font-size: 12px; letter-spacing: .04em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(251,191,36,0.4);
+    white-space: nowrap;
+  }
+  .card-badge.badge-blue {
+    background: var(--primary); color: #fff;
+    box-shadow: 0 4px 12px rgba(30,58,138,0.4);
+  }
+  .pricing-card .pre-price { color: var(--muted); font-size: 13px; margin-bottom: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+  .pricing-card .strike-big { color: var(--muted); text-decoration: line-through; font-size: 16px; }
   .pricing-card .big-price {
-    font-size: 64px; font-weight: 900;
-    color: var(--primary); letter-spacing: -0.04em;
+    font-size: 48px; font-weight: 900;
+    color: var(--primary); letter-spacing: -0.03em;
     line-height: 1; margin: 8px 0;
   }
-  .pricing-card .big-price small { font-size: 22px; color: var(--accent); font-weight: 700; }
-  .pricing-card .installments { font-size: 16px; color: var(--accent); margin-bottom: 8px; }
+  .pricing-card.reserve-card .big-price { color: #b45309; }
+  .pricing-card .big-price small { font-size: 18px; color: var(--accent); font-weight: 700; }
+  .pricing-card .installments { font-size: 15px; color: var(--accent); margin-bottom: 8px; }
+  .card-features {
+    text-align: left; margin: 16px 0; padding: 16px 0;
+    border-top: 1px dashed var(--border);
+    border-bottom: 1px dashed var(--border);
+    list-style: none;
+  }
+  .card-features li {
+    padding: 6px 0 6px 26px;
+    position: relative;
+    font-size: 14px; color: var(--accent);
+    line-height: 1.45;
+  }
+  .card-features li::before {
+    content: '✓';
+    position: absolute; left: 0; top: 6px;
+    color: #16a34a; font-weight: 900;
+  }
+  .pricing-card.reserve-card .card-features li::before { color: #b45309; }
+  .pricing-card.reserve-card .btn-primary {
+    background: #fbbf24; color: #78350f;
+  }
+  .pricing-card.reserve-card .btn-primary:hover {
+    background: #f59e0b; color: #78350f;
+    box-shadow: 0 6px 18px rgba(251,191,36,0.5);
+  }
 
   /* ---------- CROSS-LINK SECTION ---------- */
   .cross-link-section { padding: 36px 0 24px; background: var(--bg-soft); }
@@ -926,7 +974,7 @@
         <a href="#specs">Especificações</a>
         <a href="#process">Como funciona</a>
         <a href="#faq">FAQ</a>
-        <a href="#pricing" class="nav-cta">Garantir a minha</a>
+        <a href="#pricing" class="nav-cta">Reservar por R$ 750</a>
       </div>
     </nav>
   </div>
@@ -937,22 +985,22 @@
   <div class="container">
     <div class="hero-grid">
       <div>
-        <span class="hero-badge"><span class="dot"></span> Lançamento mundial · Pré-venda Brasil</span>
-        <h1>Flashforge Creator 5 Pro: <span>versão profissional</span>, câmara fechada e materiais de engenharia</h1>
-        <p class="lead">Tudo da Creator 5 base — 4 toolheads independentes, multi-cor 500% mais rápida — somado a câmara fechada aquecida 65°C, filtragem HEPA + carvão e estrutura rígida pra produção em série. ABS, PC e Nylon sem warping. A GBS importa direto, com preço final calculado e tudo entregue na sua porta.</p>
+        <span class="hero-badge"><span class="dot"></span> Pré-venda Brasil · Vagas limitadas</span>
+        <h1>Garanta sua <span>Flashforge Creator 5 Pro</span> por apenas R$ 750</h1>
+        <p class="lead">Reserve a sua unidade hoje com R$ 750 e pague o saldo de R$ 12.970 (ou 10× R$ 1.582,82) só na entrega em SP-Capital. O sinal trava o preço mesmo se o dólar subir — câmara fechada, materiais de engenharia, multi-cor 500% mais rápida, sem alfândega, sem grande desembolso agora.</p>
 
         <div class="hero-price-card">
           <div class="launch-tag">🌎 Lançamento mundial · Pré-venda Brasil 2026</div>
-          <div class="price">R$ 12.250<sup style="font-size:18px;color:var(--primary);">*</sup><small> à vista no Pix</small></div>
+          <div class="price">R$ 750<small> de sinal hoje</small></div>
           <a href="#pricing" class="hero-installments-teaser">
-            ou em <strong>18× de R$ 888,66</strong> no cartão →
+            + R$ 12.970 (ou 10× R$ 1.582,82) só na entrega em SP-Capital →
           </a>
-          <div class="savings">🚀 Garante o seu antes que esgote</div>
-          <div class="price-note">*Valor sujeito a variação conforme cotação do dólar no dia da compra.</div>
+          <div class="savings">🚀 Garante o seu antes que esgote — vagas contadas</div>
+          <div class="price-note">Sinal não reembolsável — vale como garantia da sua unidade.</div>
         </div>
 
         <div class="hero-cta-row">
-          <a href="#pricing" class="btn-primary">Garantir minha unidade →</a>
+          <a href="#pricing" class="btn-primary">Reservar por R$ 750 →</a>
           <a href="#comparison" class="btn-secondary">Ver comparativo</a>
         </div>
 
@@ -1042,8 +1090,8 @@
 
       <div class="compare-card winner">
         <h3>🇺🇸🇧🇷 GlobalBrasilShop</h3>
-        <div class="compare-price">R$ 12.250<sup style="font-size:18px;">*</sup></div>
-        <div class="compare-sub">Preço final na sua porta, sem surpresas <em style="opacity:0.7;">*sujeito à cotação do dólar do dia</em></div>
+        <div class="compare-price">R$ 13.720<sup style="font-size:18px;">*</sup></div>
+        <div class="compare-sub">R$ 750 de sinal + R$ 12.970 (ou 10× R$ 1.582,82) na entrega em SP-Capital — sem alfândega, sem surpresas <em style="opacity:0.7;">*sujeito à cotação do dólar do dia</em></div>
         <ul class="compare-list">
           <li><span class="icon icon-yes">✓</span> Atendimento em português via WhatsApp</li>
           <li><span class="icon icon-yes">✓</span> Produto + frete + impostos já calculados</li>
@@ -1194,51 +1242,34 @@
       <p style="color: rgba(255,255,255,0.9);">Estoque limitado por importação. Pagamento à vista no Pix ou parcelado no cartão até 18×.</p>
     </div>
 
-    <div class="pricing-card">
-      <div class="pre-price">Flashforge Creator 5 Pro</div>
-      <div class="big-price">R$ 12.250<sup style="font-size:24px;color:var(--primary);">*</sup><small> à vista no Pix</small></div>
+    <div class="pricing-grid">
 
-      <div class="installments-box">
-        <div class="installments-header">ou parcele no cartão:</div>
-        <div class="installments-row">
-          <select id="installments-select" class="installments-select" aria-label="Escolha a quantidade de parcelas">
-            <option value="1"  data-monthly="12634.10" data-total="12634.10">1x de R$ 12.634,10 (sem juros)</option>
-            <option value="2"  data-monthly="6625.15"  data-total="13250.30">2x de R$ 6.625,15</option>
-            <option value="3"  data-monthly="4461.36"  data-total="13384.08">3x de R$ 4.461,36</option>
-            <option value="4"  data-monthly="3420.02"  data-total="13680.08">4x de R$ 3.420,02</option>
-            <option value="5"  data-monthly="2779.61"  data-total="13898.05">5x de R$ 2.779,61</option>
-            <option value="6"  data-monthly="2353.38"  data-total="14120.28">6x de R$ 2.353,38</option>
-            <option value="7"  data-monthly="2028.70"  data-total="14200.90">7x de R$ 2.028,70</option>
-            <option value="8"  data-monthly="1798.89"  data-total="14391.12">8x de R$ 1.798,89</option>
-            <option value="9"  data-monthly="1620.17"  data-total="14581.53">9x de R$ 1.620,17</option>
-            <option value="10" data-monthly="1464.50"  data-total="14645.00">10x de R$ 1.464,50</option>
-            <option value="11" data-monthly="1351.64"  data-total="14868.04">11x de R$ 1.351,64</option>
-            <option value="12" data-monthly="1241.12"  data-total="14893.44">12x de R$ 1.241,12</option>
-            <option value="13" data-monthly="1176.73"  data-total="15297.49">13x de R$ 1.176,73</option>
-            <option value="14" data-monthly="1102.65"  data-total="15437.10">14x de R$ 1.102,65</option>
-            <option value="15" data-monthly="1038.45"  data-total="15576.75">15x de R$ 1.038,45</option>
-            <option value="16" data-monthly="982.27"   data-total="15716.32">16x de R$ 982,27</option>
-            <option value="17" data-monthly="932.71"   data-total="15856.07">17x de R$ 932,71</option>
-            <option value="18" data-monthly="888.66"   data-total="15995.88" selected>18x de R$ 888,66</option>
-          </select>
-          <div class="installments-result">
-            <div class="installments-total-label">Total no cartão</div>
-            <div class="installments-total-value">R$ <span id="inst-total">15.995,88</span></div>
-          </div>
+      <!-- CARD ÚNICO: RESERVA -->
+      <div class="pricing-card reserve-card">
+        <span class="card-badge">🔒 Trava o preço</span>
+        <div class="pre-price">Reserva Creator 5 Pro</div>
+        <div class="strike-big">De R$ 15.990 no revendedor BR</div>
+        <div class="big-price">R$ 750<small> de sinal</small></div>
+        <div class="installments">+ saldo de R$ 12.970 <strong>ou 10× R$ 1.582,82</strong> só na entrega em SP-Capital</div>
+        <div class="savings-big" style="background:#fef3c7;color:#78350f;">⚡ Garanta sua Creator 5 Pro por apenas R$ 750 e só pague o saldo quando ela chegar</div>
+
+        <ul class="card-features">
+          <li>Sinal de <strong>R$ 750</strong> hoje (Pix ou cartão)</li>
+          <li>Saldo de <strong>R$ 12.970</strong> à vista <strong>ou 10× R$ 1.582,82</strong>, somente na entrega em SP-Capital</li>
+          <li>O sinal é o premium da reserva — garante: preço travado mesmo se o dólar subir + unidade reservada no seu nome</li>
+          <li><strong>Chegada garantida</strong> em 20–30 dias no nosso galpão em SP-Capital</li>
+          <li><strong>Sinal não reembolsável</strong> — vale como garantia da unidade</li>
+        </ul>
+
+        <a href="#" class="btn-primary" onclick="checkout('reserva'); return false;">
+          Reservar por R$ 750 →
+        </a>
+
+        <div class="pay-methods">
+          <strong>Você garante sua Creator 5 Pro pagando menos e sem risco.</strong>
         </div>
       </div>
 
-      <div class="savings-big">🚀 Lançamento — primeiras unidades no Brasil</div>
-      <div class="price-note-big">*Valor sujeito a variação conforme cotação do dólar no dia da compra.</div>
-
-      <a href="#" class="btn-primary" onclick="checkout('pre-venda'); return false;">
-        Comprar agora →
-      </a>
-
-      <div class="pay-methods">
-        <strong>Formas de pagamento:</strong> Pix · Cartão até 18x · Boleto · Transferência<br>
-        <strong>Tudo incluso:</strong> produto + frete internacional + impostos + entrega no Brasil
-      </div>
     </div>
   </div>
 </section>
@@ -1314,7 +1345,7 @@
       <p class="section-sub">Apenas 30 unidades nesta primeira leva. Quando acabar, o próximo lote sai pelo preço cheio.</p>
     </div>
     <div style="text-align: center;">
-      <a href="#pricing" class="btn-primary">Garantir minha Creator 5 Pro →</a>
+      <a href="#pricing" class="btn-primary">Reservar por R$ 750 →</a>
       <div style="margin-top: 24px; font-size: 14px; color: #94a3b8;">
         Dúvidas? Fale com a gente: <a href="https://wa.me/13053152155" style="color: #25D366; font-weight: 700;">WhatsApp +1 (305) 315-2155</a>
       </div>
@@ -1365,19 +1396,23 @@
 </footer>
 
 <!-- CHECKOUT MODAL -->
-<div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" data-mode="reserva">
   <div class="modal" role="document">
     <div class="modal-header">
-      <h3 id="modalTitle">Finalizar pedido — Flashforge Creator 5 Pro</h3>
+      <h3 id="modalTitle">Reservar Creator 5 Pro — Sinal de R$ 750</h3>
       <button type="button" class="modal-close" onclick="closeCheckoutModal()" aria-label="Fechar">×</button>
     </div>
     <div class="modal-body">
       <div class="modal-summary">
         <div>
-          <div class="summary-label">Seu pedido</div>
-          <div class="summary-product">Flashforge Creator 5 Pro</div>
+          <div class="summary-label" id="summaryLabel">Sua reserva</div>
+          <div class="summary-product" id="summaryProduct">Reserva Creator 5 Pro — Sinal de R$ 750</div>
         </div>
-        <div class="summary-price">R$ 12.250*</div>
+        <div class="summary-price" id="summaryPrice">R$ 750</div>
+      </div>
+      <div id="reserveNote" style="display:block; background:#fef3c7; border:1px solid #fbbf24; border-radius:10px; padding:12px 14px; margin-bottom:16px; font-size:13px; color:#78350f; line-height:1.5;">
+        <strong>🔒 Reserva — sinal de R$ 750 (premium pela reserva)</strong><br>
+        Garanta sua Creator 5 Pro por apenas R$ 750 hoje e só pague o saldo quando ela chegar. O sinal trava o preço em <strong>R$ 12.970</strong> mesmo se o dólar subir e garante sua unidade. O saldo de <strong>R$ 12.970</strong> (ou <strong>10× R$ 1.582,82</strong>) é pago somente na entrega em SP-Capital, após a chegada em 20–30 dias. <strong>Total à vista: R$ 13.720.</strong> Sinal não reembolsável.
       </div>
 
       <form id="checkoutForm" onsubmit="submitCheckout(event)" autocomplete="on" novalidate>
@@ -1475,14 +1510,31 @@
   }
 
   // ---------- CHECKOUT MODAL ----------
-  function checkout() { openCheckoutModal(); }
+  // Único modo ativo: reserva (R$ 750 sinal + saldo na entrega em SP-Capital).
+  // Pagamento integral foi removido depois de validar com a turma — barreira alta demais.
+  const CHECKOUT_MODES = {
+    reserva: {
+      product_id: 'creator5-pro-reservation',
+      title: 'Reservar Creator 5 Pro — Sinal de R$ 750',
+      product_label: 'Reserva Creator 5 Pro — Sinal de R$ 750',
+      summary_price: 'R$ 750',
+      track_value: 750,
+      submit_text: 'Gerar link da reserva',
+      wa_subject: 'reservar a *Flashforge Creator 5 Pro* com sinal de R$ 750. Saldo de R$ 12.970 (ou 10× R$ 1.582,82) na entrega em SP-Capital (20–30 dias)',
+    }
+  };
+
+  function checkout() {
+    openCheckoutModal();
+  }
 
   function openCheckoutModal() {
+    const cfg = CHECKOUT_MODES.reserva;
     const m = document.getElementById('checkoutModal');
     m.classList.add('open');
     document.body.style.overflow = 'hidden';
     setTimeout(() => { const f = document.getElementById('cpf'); if (f) f.focus(); }, 200);
-    track('begin_checkout', { product: 'Flashforge Creator 5 Pro', value: 12250, currency: 'BRL' });
+    track('begin_checkout', { product: 'Flashforge Creator 5 Pro', mode: 'reserva', value: cfg.track_value, currency: 'BRL' });
   }
   function closeCheckoutModal() {
     document.getElementById('checkoutModal').classList.remove('open');
@@ -1580,8 +1632,10 @@
       complemento: compl, bairro: get('bairro'), cidade: get('cidade'), estado: get('estado')
     };
 
+    const cfg = CHECKOUT_MODES.reserva;
+
     const whatsappMsg =
-`Olá! Quero comprar a *Flashforge Creator 5 Pro* por R$ 12.250*
+`Olá! Quero ${cfg.wa_subject}
 
 *👤 Dados do titular:*
 Nome: ${clientData.nome}
@@ -1589,7 +1643,7 @@ CPF/CNPJ: ${clientData.cpf}
 E-mail: ${clientData.email}
 WhatsApp: +55 ${clientData.telefone}
 
-*📍 Endereço de entrega:*
+*📍 Endereço de cobrança (entrega em SP-Capital):*
 ${clientData.endereco}, ${clientData.numero}${compl ? ' — ' + compl : ''}
 ${clientData.bairro} — ${clientData.cidade}/${clientData.estado}
 CEP: ${clientData.cep}
@@ -1598,7 +1652,8 @@ Aguardo instruções de pagamento.`;
 
     track('qualify_lead', {
       product: 'Flashforge Creator 5 Pro',
-      value: 12250,
+      mode: 'reserva',
+      value: cfg.track_value,
       currency: 'BRL',
       city: clientData.cidade,
       state: clientData.estado
@@ -1613,7 +1668,7 @@ Aguardo instruções de pagamento.`;
 
     // API central GBS (compartilhada por todas as LPs)
     const PAYMENTS_API = 'https://api.globalbrasilshop.com/api/create-payment';
-    const PRODUCT_ID = 'creator5-pro';
+    const PRODUCT_ID = cfg.product_id;
 
     try {
       const resp = await fetch(PAYMENTS_API, {
@@ -1624,7 +1679,7 @@ Aguardo instruções de pagamento.`;
       const data = await resp.json();
 
       if (resp.ok && data.success && data.paymentUrl) {
-        track('begin_checkout_redirect', { orderId: data.orderId, product: 'Flashforge Creator 5 Pro' });
+        track('begin_checkout_redirect', { orderId: data.orderId, product: 'Flashforge Creator 5 Pro', mode: mode });
         window.location.href = data.paymentUrl;
         return;
       }
